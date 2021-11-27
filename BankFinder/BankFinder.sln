@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankFinderDataSync", "BankFinderDataSync\BankFinderDataSync.csproj", "{FD05B093-C129-4BAD-AB6D-718E4FDE9E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankFinderAPI", "BankFinderAPI\BankFinderAPI.csproj", "{6A74CBB4-75BA-4B8A-974F-55E984B9DB7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD05B093-C129-4BAD-AB6D-718E4FDE9E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD05B093-C129-4BAD-AB6D-718E4FDE9E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD05B093-C129-4BAD-AB6D-718E4FDE9E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD05B093-C129-4BAD-AB6D-718E4FDE9E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A74CBB4-75BA-4B8A-974F-55E984B9DB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A74CBB4-75BA-4B8A-974F-55E984B9DB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A74CBB4-75BA-4B8A-974F-55E984B9DB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A74CBB4-75BA-4B8A-974F-55E984B9DB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FE96162-DCE7-4C83-B106-495F3F82D3D5}
+	EndGlobalSection
+EndGlobal
