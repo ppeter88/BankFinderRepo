@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # Application settings
 appsettings.json
+
+# API launch settings
+launchSettings.json
