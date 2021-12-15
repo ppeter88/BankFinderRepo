@@ -1,13 +1,10 @@
-﻿using System;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
-namespace BankFinderAPI.Models
+namespace BankFinderDatasync.Models
 {
-	[XmlRoot(ElementName = "DaneAdresowe")]
+    [XmlRoot(ElementName = "DaneAdresowe")]
 	public class Address
 	{
-		public int Id { get; set; }
-
 		[XmlElement(ElementName = "kraj")]
 		public string Country { get; set; }
 

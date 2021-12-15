@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using BankFinderAPI.Entities;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BankFinderAPI.Models
+namespace BankFinderDatasync.Models
 {
     [XmlRoot(ElementName = "Instytucje")]
 	public class Institutions

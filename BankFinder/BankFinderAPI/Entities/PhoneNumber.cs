@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BankFinderAPI.Models
+namespace BankFinderAPI.Entities
 {
     public class PhoneNumber
     {

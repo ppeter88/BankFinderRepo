@@ -1,28 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace BankFinderAPI.Models
+namespace BankFinderAPI.Entities
 {
-	[XmlRoot(ElementName = "NumerRozliczeniowy")]
 	public class SortCode
 	{
         public int Id { get; set; }
-
-        [XmlElement(ElementName = "NrRozliczeniowy")]
 		public string Code { get; set; }
-
-		[XmlElement(ElementName = "NazwaNumeru")]
 		public string CodeName { get; set; }
-
-		[XmlElement(ElementName = "KodyBIC")]
-		public virtual List<string> BicCodes { get; set; }
-
-		[XmlElement(ElementName = "DataWygenerowania")]
+		[NotMapped]
+		public virtual List<BicCode> BicCodes { get; set; }
 		public DateTime GenerationDate { get; set; }
-
         public int UnitId { get; set; }
         public virtual Unit Unit { get; set; }
     }

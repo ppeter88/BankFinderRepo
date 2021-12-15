@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace BankFinderAPI.Models
+namespace BankFinderAPI.Entities
 {
     public class BicCode
     {

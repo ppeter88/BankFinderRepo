@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Serialization;
 
-namespace BankFinderAPI.Models
+namespace BankFinderDatasync.Models
 {
     [XmlRoot(ElementName = "Jednostka")]
 	public class Unit
@@ -10,9 +11,11 @@ namespace BankFinderAPI.Models
         public int Id { get; set; }
 
         [XmlElement(ElementName = "NumerTelefonu")]
+		[NotMapped]
 		public virtual List<string> PhoneNumbers { get; set; }
 
 		[XmlElement(ElementName = "NumerFaksu")]
+		[NotMapped]
 		public virtual List<string> FaxNumbers { get; set; }
 
 		[XmlElement(ElementName = "NumerRozliczeniowy")]

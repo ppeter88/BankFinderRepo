@@ -1,4 +1,4 @@
-﻿using BankFinderAPI.Models;
+﻿using BankFinderAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,5 +22,6 @@ namespace BankFinderAPI.Data
         public DbSet<PhoneNumber> PhoneNumber { get; set; }
         public DbSet<Unit> Unit { get; set; }
         public DbSet<Institution> Institution { get; set; }
+        public DbSet<BinNumber> BinNumber { get; set; }
     }
 }

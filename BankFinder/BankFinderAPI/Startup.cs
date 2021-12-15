@@ -1,4 +1,6 @@
 using BankFinderAPI.Data;
+using BankFinderAPI.Services;
+using BankFinderAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,7 @@ namespace BankFinderAPI
         {
             services.AddDbContext<BanksDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Prod")));
             services.AddControllers();
+            services.AddScoped<IBankServices, BankServices>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BankFinderAPI", Version = "v1" });
@@ -50,7 +53,7 @@ namespace BankFinderAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
